@@ -1,0 +1,8 @@
+.text-center {
+    text-align: center;
+}
+
+#ribbon {
+    width: 40%;
+    float: left;
+}
