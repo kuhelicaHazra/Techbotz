@@ -1,36 +1,50 @@
-<!--The content below is only a placeholder and can be replaced.-->
-
-<div class="bg-faded py-lg-4">
-    <div class="tagline-upper text-center text-heading text-shadow text-white d-none d-lg-block">
-        <img src="./assets/images/logo.png" width="" height="" alt="">TechBotz</div>
-    <div class="tagline text-center text-expanded text-shadow text-uppercase text-white d-none d-lg-block">Don't Be Good,Be Better | Take Your Projects To Next Level | You Dream It,We Build It </div>
-</div>
-
-<div class="margin-space"></div>
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-light bg-faded">
-    <img class="navbar-toggler no-border" src="./assets/images/logo.png" width="90" height="60" alt="">
-    <button class="navbar-toggler btn btn-outline-primary" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed"
-        aria-controls="navbarSupportedContent">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mx-auto">
-            <li class="nav-item px-lg-4">
-                <a class="nav-link text-uppercase text-expanded" routerLink="/" routerLinkActive="active-link">Home</a>
-            </li>
-            <li class="nav-item px-lg-4">
-                <a class="nav-link text-uppercase text-expanded" routerLink="/about" routerLinkActive="active-link">About</a>
-            </li>
-            <li class="nav-item px-lg-4">
-                <a class="nav-link text-uppercase text-expanded" routerLink="/gallery" routerLinkActive="active-link">Gallery</a>
-            </li>
-            <li class="nav-item px-lg-4">
-                <a class="nav-link text-uppercase text-expanded" routerLink="/contactUs" routerLinkActive="active-link">Contact</a>
-            </li>
-        </ul>
+<nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top navbar-border">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <img class="logo animated zoomIn" src="./assets/images/logo.png" width="" height="" alt="">
+                    </div>
+                    <div class="col  animated slideInUp">
+                        <div class="text-heading text-shadow text-white d-none d-lg-block title-head">TechBotz</div>
+                        <div class="tagline tag text-shadow text-uppercase text-white d-none d-lg-block">A Step to Innovation And Excellence</div>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive" data-toggle="collapse" data-target=".navbar-collapse.show">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active px-lg-2 animated slideInUp">
+                    <a class="nav-link hvr-grow-shadow" routerLink="/">Home
+              <span class="sr-only">(current)</span>
+            </a>
+                </li>
+                <li class="nav-item px-lg-2 animated slideInUp hvr-float-shadow">
+                    <a class="nav-link hvr-grow-shadow" routerLink="/service">Services</a>
+                </li>
+                <li class="nav-item px-lg-2 animated slideInUp hvr-float-shadow">
+                    <a class="nav-link hvr-grow-shadow" routerLink="/about">About</a>
+                </li>
+                <li class="nav-item px-lg-2 animated slideInUp hvr-float-shadow">
+                    <a class="nav-link hvr-grow-shadow" routerLink="/gallery">Gallery</a>
+                </li>
+                <li class="nav-item px-lg-2 animated slideInUp hvr-float-shadow">
+                    <a class="nav-link hvr-grow-shadow" routerLink="/contactUs">Contact</a>
+                </li>
+            </ul>
+        </div>
     </div>
 </nav>
+
+
+<!-- <div class="margin-space"></div> -->
+<!-- Navigation -->
+
 
 <div class="margin-space"></div>
 <router-outlet></router-outlet>

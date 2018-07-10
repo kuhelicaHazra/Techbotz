@@ -7,14 +7,30 @@
  * 
  */
 
+@import url("library/hover.css");
+@import url("library/animate.css");
+html {
+    overflow-x: hidden
+}
+
 body {
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
-    background: url('./assets/images/wallpaper15.jpg') no-repeat center center fixed;
+    background: url('./assets/images/wallpaper2.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
     color: black
+}
+
+body {
+    padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+    body {
+        padding-top: 56px;
+    }
 }
 
 .navbar-icon {
@@ -70,17 +86,49 @@ h1 {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
+.bg-black {
+    background-color: #0c0b0bd1;
+}
+
 .bg-body {
-    background-color: #cfcbdfe6;
+    background-color: #0c0b0bd1;
+}
+
+.bg-whitish {
+    background-color: #fef8f88a;
+}
+
+.text-yellow {
+    color: #ffc107;
+}
+
+.text-brown {
+    color: #8e3c00;
+    background-color: #1c1cc33b;
 }
 
 .bg-overlay {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
+.bg-wheatish {
+    background-color: #efeaeae0;
+}
+
 hr.divider {
-    border-color: #0C0B0B;
+    border-color: #8e3c00;
     max-width: 250px;
+    overflow: overlay;
+}
+
+hr.divider2 {
+    border-color: #ffc107;
+    max-width: 250px;
+    overflow: overlay;
+}
+
+.emoticonsize {
+    height: 250px;
 }
 
 .map-container iframe {
@@ -91,13 +139,17 @@ hr.divider {
     pointer-events: auto;
 }
 
+.navbar-border {
+    border-bottom: 11px solid #ffc107;
+}
+
 .nav-link {
     font-weight: bolder !important;
     color: #E7B7B7 !important;
 }
 
 .nav-link:hover {
-    color: rgba(243, 5, 71, 0.96) !important;
+    color: #ffc107 !important;
     text-decoration: underline !important;
 }
 

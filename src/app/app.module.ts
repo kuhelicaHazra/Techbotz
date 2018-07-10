@@ -9,7 +9,7 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { ContactUsComponent } from './contact/contactUs.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-
+import { ServicesComponent } from './services/services.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +17,8 @@ import { HttpModule } from '@angular/http';
     HomeComponent,
     AboutComponent,
     GalleryComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    ServicesComponent
   ],
   imports: [
     BrowserModule,

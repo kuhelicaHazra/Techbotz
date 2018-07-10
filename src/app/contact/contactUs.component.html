@@ -1,6 +1,9 @@
 <form id="contact" action="/send-email" method="POST" [formGroup]="submitform" (ngSubmit)="onSubmit()">
     <div class="container">
         <div class="row form-group">
+            <div class="alert alert-success" *ngIf="show">
+                <strong>Success!</strong>Message successfully sent. We will Contact you soon.
+            </div>
             <div class="section-content col-md-12">
                 <h1 class="section-header">Get in <span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s"> Touch with us</span></h1>
             </div>

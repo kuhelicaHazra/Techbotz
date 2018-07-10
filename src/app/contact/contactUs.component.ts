@@ -10,6 +10,7 @@ import { Http } from '@angular/http';
 export class ContactUsComponent {
 
   submitform: FormGroup; // <--- submitorm is of type FormGroup
+  show= false;
   constructor(private fb: FormBuilder, private http: Http) { // <--- inject FormBuilder
     this.createForm();
   }
@@ -27,6 +28,15 @@ onSubmit() {
 console.log(this.submitform.value);
 console.log('POST');
   const url = `/sendEmail`;
-  this.http.post(url, this.submitform.value).subscribe(res => console.log(res.json()));
+
+  return this.http.post(url, this.submitform.value)
+  .subscribe(res => this.showmsg(res));
+
+}
+showmsg(data){
+  if (data._body==='Email Sent Successfully'){
+    this.show=true;
+    this.submitform.reset();
+    }
 }
 }

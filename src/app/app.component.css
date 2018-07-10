@@ -1,3 +1,25 @@
 .no-border {
     border: none !important;
 }
+
+.logo {
+    height: 74px;
+}
+
+.title-head {
+    font-size: 2rem;
+}
+
+.sub-header {
+    font-size: 1rem;
+    position: relative;
+}
+
+.tag {
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+.align-bottom-5 {
+    margin-top: 5%;
+}
