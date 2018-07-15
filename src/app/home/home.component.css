@@ -14,8 +14,12 @@
 
 .knowmore:hover {
     text-decoration: #ffc107 !important;
-    color: #ffc107 !important;
+    color: #be1010 !important;
     cursor: pointer;
+}
+
+.knowmore {
+    color: #ffc107 !important;
 }
 
 .color-icon {
@@ -78,7 +82,7 @@
     position: relative;
     font-size: 17px;
     padding: 10px;
-    background: #000000ed;
+    background: #863535;
     -webkit-transform: translateY(45px);
     -ms-transform: translateY(45px);
     transform: translateY(45px);

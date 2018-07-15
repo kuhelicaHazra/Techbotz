@@ -15,7 +15,7 @@ html {
 
 body {
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
-    background: url('./assets/images/wallpaper2.jpg') no-repeat center center fixed;
+    background: url('./assets/images/wallpaper15.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -94,6 +94,10 @@ h1 {
     background-color: #0c0b0bd1;
 }
 
+.bg-brown {
+    background-color: #3d0814;
+}
+
 .bg-whitish {
     background-color: #fef8f88a;
 }
@@ -105,6 +109,10 @@ h1 {
 .text-brown {
     color: #8e3c00;
     background-color: #1c1cc33b;
+}
+
+.bg-darkblack {
+    background-color: #000000e8;
 }
 
 .bg-overlay {
