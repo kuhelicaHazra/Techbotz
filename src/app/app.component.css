@@ -10,6 +10,18 @@
     font-size: 2rem;
 }
 
+@media (max-width: 767px) {
+    /* CSS goes here */
+    .title-head {
+        font-size: 1rem;
+    }
+}
+
+.page-scroll-header {
+    background-color: #ccc !important;
+    opacity: 0.9;
+}
+
 .sub-header {
     font-size: 1rem;
     position: relative;
@@ -22,4 +34,30 @@
 
 .align-bottom-5 {
     margin-top: 5%;
+}
+
+.page-scroll-header {
+    background-color: #241523fa !important;
+    opacity: 0.9;
+}
+
+.rightfloat {
+    float: right;
+}
+
+.text-green {
+    color: #a7ff9b!important;
+}
+
+.green {
+    color: #f1f3f1!important;
+}
+
+.f-size {
+    font-size: 24px;
+    color: #fff;
+}
+
+.adjs-padd {
+    padding: 7px;
 }

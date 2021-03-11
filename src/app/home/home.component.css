@@ -8,18 +8,18 @@
 }
 
 .freelance {
-    color: #ffc107;
+    color: #e9d599;
     text-decoration: overline underline;
 }
 
 .knowmore:hover {
     text-decoration: #ffc107 !important;
-    color: #be1010 !important;
+    color: #6f6565 !important;
     cursor: pointer;
 }
 
 .knowmore {
-    color: #ffc107 !important;
+    color: #473939 !important
 }
 
 .color-icon {
@@ -60,13 +60,11 @@
     overflow: hidden;
     top: 0;
     left: 0;
-    background-color: rgba(195, 164, 164, 0.36);
     -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
 }
 
 .hovereffect:hover .overlay {
-    background-color: rgba(48, 152, 157, 0.4);
     color: #ffc107;
 }
 
@@ -134,4 +132,9 @@
 
 .bordor-size:hover {
     border: 1px solid #a81717;
+}
+
+.shado {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
+    border-left: solid 2px #bcbcbc;
 }

@@ -1,39 +1,39 @@
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-brown fixed-top navbar-border">
-    <div class="container">
-        <a class="navbar-brand" href="#">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col">
-                        <img class="logo animated zoomIn d-none d-lg-block" src="./assets/images/logo.png" width="" height="" alt="">
+<nav class="navbar navbar-expand-lg navbar-dark bg-purple-dark fixed-top navbar-border" [ngClass]="{'page-scroll-header': isScrolled}">
+    <div class=" container ">
+        <a class="navbar-brand " href="# ">
+            <div class="container-fluid ">
+                <div class="row ">
+                    <div class="col ">
+                        <img class="logo animated zoomIn d-none d-lg-block " src="./assets/images/logo.png " width=" " height=" " alt=" ">
                     </div>
                     <div class="col animated slideInUp">
-                        <div class="text-heading text-shadow text-white d-sm-block title-head">TechBotz</div>
-                        <div class="tagline tag text-shadow text-uppercase text-white d-none d-lg-block">A Step to Innovation And Excellence</div>
+                        <div class="text-heading text-shadow text-white d-sm-block title-head .d-sm-none .d-md-block">TechBotz Solutions</div>
+                        <div class="tagline tag text-shadow text-uppercase text-white d-none d-lg-block .d-sm-none .d-md-block">A Step to Innovation And Excellence</div>
                     </div>
                 </div>
             </div>
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <button id="navroute" class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
         <div class="collapse navbar-collapse" id="navbarResponsive" data-toggle="collapse" data-target=".navbar-collapse.show">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active px-lg-2 animated slideInUp">
-                    <a class="nav-link hvr-grow-shadow" routerLink="/">Home
-              <span class="sr-only">(current)</span>
-            </a>
+                    <div class="nav-link hvr-grow-shadow" routerLink="/">Home
+                        <span class="sr-only">(current)</span>
+                    </div>
                 </li>
                 <li class="nav-item px-lg-2 animated slideInUp hvr-float-shadow">
                     <a class="nav-link hvr-grow-shadow" routerLink="/service" routerLinkActive="active-link">Services</a>
                 </li>
                 <li class="nav-item px-lg-2 animated slideInUp hvr-float-shadow">
-                    <a class="nav-link hvr-grow-shadow" routerLink="/about" routerLinkActive="active-link">About</a>
+                    <div class="nav-link hvr-grow-shadow" routerLink="/about" routerLinkActive="active-link">About</div>
                 </li>
-                <li class="nav-item px-lg-2 animated slideInUp hvr-float-shadow">
+                <li class="nav-item px-lg-2 animated slideInUp hvr-float-shadow ">
                     <a class="nav-link hvr-grow-shadow" routerLink="/gallery" routerLinkActive="active-link">Gallery</a>
                 </li>
-                <li class="nav-item px-lg-2 animated slideInUp hvr-float-shadow">
+                <li class="nav-item px-lg-2 animated slideInUp hvr-float-shadow ">
                     <a class="nav-link hvr-grow-shadow" routerLink="/contactUs" routerLinkActive="active-link">Contact</a>
                 </li>
             </ul>
@@ -42,36 +42,41 @@
 </nav>
 
 
-<!-- <div class="margin-space"></div> -->
+<!-- <div class="margin-space "></div> -->
 <!-- Navigation -->
 
 
-<div class="margin-space"></div>
-<router-outlet (activate)="onActivate($event)"></router-outlet>
+<div class="margin-space "></div>
+<router-outlet (activate)="onActivate($event) "></router-outlet>
 
-<div class="margin-space"></div>
+<div class="margin-space "></div>
 
-<footer class="page-footer bg-brown text-center py-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-4 col-sm-12 mt-4">
-                <img class="logo animated zoomIn d-md-none" src="./assets/images/logo.png" width="" height="" alt="">
-                <p class="m-0 text-white">Copyright &copy; TechBotz.in 2018</p>
+<footer class="page-footer bg-purple-light text-center">
+    <div class="container-fluid ">
+        <div class="row ">
+            <div class="col-sm-12 mt-4 ">
+                <h5 class="text-green add-border ">Connect</h5>
+                <div class="text-white text-center col-sm-12 ">
+                    <i class="fas fa-home "></i>&nbsp; Address:&nbsp; 11B Ganesh Nagar Ext. 2,Shakarpur, New Delhi, DL 110092
+                </div>
+                <div class="col-sm-12 text-center text-white ">
+                    <i class="fas fa-phone "></i>&nbsp;&nbsp;Phone: +91 98712 85316 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+                <div class="col-sm-12 text-white text-center ">
+                    <i class=" fas fa-envelope-square "></i>&nbsp;&nbsp;Email: info@techbotz.in
+                </div>
             </div>
-            <div class="col-lg-4 col-sm-12 right mt-4">
-                <h5 class="text-white">Follow Us On</h5>
-
-                <img src="./assets/images/fb.png" alt="facebook" width="30" height="30">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <img src="./assets/images/twitter.png" alt="twitter" width="30" height="30">
-
+        </div>
+        <hr class="divider3 mt-1 ">
+        <div class="row ">
+            <div class="col-sm-6 ">
+                <p class="m-0 text-green ">&copy;2018&nbsp; TechBotz.in | All Rights Reserved. </p>
             </div>
-            <div class="col-lg-4 col-sm-12 right text-center mt-4">
-                <h5 class="text-white">Connect</h5>
-                <p class="text-white text-left">
-                    <i class="fas fa-home"></i>&nbsp;&nbsp; Address: &nbsp;&nbsp;&nbsp;&nbsp; 11B Ganesh Nagar Ext. 2, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Shakarpur, New Delhi, DL 110092</p>
-                <p class="text-white text-left">
-                    <i class="fas fa-phone"></i>&nbsp;&nbsp;Phone: +91 89205 68156</p>
-                <p class="text-white text-left"><i class="fas fa-envelope-square"></i>&nbsp;&nbsp;Email: INFO@TECHBOTZ.IN</p>
+            <div class="col-sm-6 mb-2 ">
+                <i class="fab fa-facebook fa-2x green mr-4 "></i>
+                <i class="fab fa-twitter fa-2x green mr-4 "></i>
+                <i class="fab fa-linkedin fa-2x green mr-4 "></i>
+                <i class="fab fa-whatsapp fa-2x green "></i>
             </div>
         </div>
     </div>

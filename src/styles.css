@@ -9,13 +9,14 @@
 
 @import url("library/hover.css");
 @import url("library/animate.css");
+@import "~bootstrap/dist/css/bootstrap.css";
 html {
     overflow-x: hidden
 }
 
 body {
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
-    background: url('./assets/images/wallpaper15.jpg') no-repeat center center fixed;
+    font-family: Kanit, sans-serif;
+    background: url('./assets/images/wallpaper6.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -95,7 +96,7 @@ h1 {
 }
 
 .bg-brown {
-    background-color: #3d0814;
+    background-color: #070707f2;
 }
 
 .bg-whitish {
@@ -113,6 +114,18 @@ h1 {
 
 .bg-darkblack {
     background-color: #000000e8;
+}
+
+.bg-purple-light {
+    background-color: #241523fa;
+}
+
+.bg-purple-dark {
+    background-color: #3b094ff2;
+}
+
+.bg-purple {
+    background-color: #1a0241fa;
 }
 
 .bg-overlay {
@@ -135,6 +148,12 @@ hr.divider2 {
     overflow: overlay;
 }
 
+hr.divider3 {
+    border-color: #ffc107;
+    overflow: overlay;
+    margin-top: 0rem;
+}
+
 .emoticonsize {
     height: 250px;
 }
@@ -147,9 +166,7 @@ hr.divider2 {
     pointer-events: auto;
 }
 
-.navbar-border {
-    border-bottom: 11px solid #ffc107;
-}
+.navbar-border {}
 
 .nav-link {
     font-weight: bolder !important;
